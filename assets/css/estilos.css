@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+
+body {
+    font-family:'Open Sans', sans-serif;
+    background-color: beige;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Staatliches', sans-serif;
+}
+
+.header{
+    width: 100%;
+    background: rgb(108, 147, 255);
+    font-size: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    letter-spacing: 1px;
+}
+
+.menu{
+    padding-right: 4%;
+}
+
+.logo{
+    height: 8%;
+    width: 8%;
+    margin-left: 2%;
+    float: left;
+}
+
+.item{
+    height: 40px;
+    width: 40px;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 11px;
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+
+.menu_link{
+    display: block;
+    padding: 20px 20px;  
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu_link:hover {
+    color: rgb(201, 109, 24);
+}
+
+.select{
+    color: rgb(201, 109, 24);
+}
+
+.banner {
+    margin-top: 7.8%;
+    background-color: white;
+}
+.imagen{
+    background-image: url(../img/bannernegro2.jpg);
+    background-size: cover;
+    height: 160px;
+}
+
+.nosotros{
+    display: flex;
+    background-color:rgb(144, 188, 238);
+    padding-top: 8%;
+    padding-bottom: 3%;
+}
+
+.logo2{
+    height: 140px;
+    width: 140px;
+    margin-left: 60%;
+}
+
+.texto2{
+    text-align: center;
+    padding-right: 40%;
+}
+
+.text{
+    padding-top: 10px;
+}
+
+.datos{
+    text-align: center;
+    background-color: rgb(144, 188, 238);
+    padding-top: 3%;
+    padding-bottom: 8%;
+}
+
+.titulodatos2{
+    font-size: 80px;
+    font-family: 'Otomanopee One', sans-serif;
+    color: rgb(54, 54, 54);
+}
+
+.consultapagos{
+    padding-bottom: 10%;
+    width: 100%;
+    background-color:rgb(255, 130, 130);
+    font-family: 'Roboto', sans-serif;
+}
+
+.consulta{
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.consulta1{
+    padding-top: 10%;
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.enviar{
+    margin-top: 10px;
+}
+
+.pagos{
+    padding-top: 4%;
+}
+
+.textoconsulta{
+    text-align: center;
+}
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+.footer{
+    height: auto;
+    background-color: #040404;
+    color: white;
+    text-align: center;
+}
+
+.textofooter{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.instagram{
+    height: 25px;
+    width: 25px;
+}
+
+.main{
+    background-color: rgb(221, 221, 221);
+}
+
+.video{
+    width:70%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.video::after{
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.video2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width:992px) {
+    .consultapagos{
+        background-color:rgb(144, 188, 238); 
+    }
+    .datos{
+        background-color:rgb(255, 130, 130); 
+    }
+    .header{
+        font-size: 60%;
+    }
+    .nosotros{
+        text-align: center;
+    }
+    .texto2{
+        align-content: center;
+        padding-right: 25%;
+        padding-left: 25%;
+    }
+    .logo2{
+        height: 200px;
+        width: 200px;
+        margin:0;
+    }
+    .consulta{
+        padding-right: 25%;
+        padding-left: 25%;
+    }
+}
+
+@media (max-width:768px) {
+    .video{
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+    .header label{
+        display: block;
+        margin-left: auto;
+    }
+    .menu ul{
+        position: fixed;
+        left: 0px;
+        top: 60px;
+        width: 100%;
+        flex-direction: column;
+        width: 50%;
+        background: rgb(108, 147, 255);
+        margin-left: 100%;
+        font-size: 10px;
+        transition: all 0.5s;
+        color: black;
+    }
+    #inicio{
+        border-top: solid 1px black;    
+    }
+    .menu_item{
+        border-bottom: solid 1px black;
+    }
+    .logo{
+        height: 60px;
+        width: 60px;
+    }
+    #btn-menu:checked ~ .menu ul{
+        margin-left: 50%;
+    }
+    .banner {
+        margin-top: 60px;
+    }
+    .imagen{
+        height: 93.88px;
+    }
+    .logo2{
+        height: 150px;
+        width: 150px;
+    }
+    .consulta{
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+    .pagos{
+        width: 80%;
+    }
+    .textofooter{
+        font-size: 60%;
+    }
+    .instagram{
+        height: 15px;
+        width: 15px;
+    }
+}
+
+@media (max-width:500px) {
+    .video{
+        margin-top: 5%;
+        margin-bottom: 55%;
+    }
+    .titulodatos2{
+        font-size: 60px;
+    }
+    .texto2{
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+    .text{
+        font-size: 14px;
+    }
+    .imagen{
+        height: 80px;
+    }
+    .logo2{
+        height: 120px;
+        width: 120px;
+    }
+}
+
